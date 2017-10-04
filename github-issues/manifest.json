@@ -1,0 +1,17 @@
+{
+"name": "github issues",
+"description": "Make github issues a bit more accessible",
+"version": "1.4",
+"manifest_version": 2,
+
+"content_scripts": [{
+
+"matches": [
+"*://*.github.com/*issues*",
+"*://github.mit.edu/*issues*"
+],
+
+"all_frames": true, "js": ["issues.js"]
+}]
+
+}

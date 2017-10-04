@@ -1,0 +1,12 @@
+{
+"name": "groups.io",
+"description": "Make groups.io a bit more accessible",
+"version": "1.2",
+"manifest_version": 2,
+
+"content_scripts": [{
+"matches": ["*://*.groups.io/*"],
+"all_frames": true, "js": ["groups.js"]
+}]
+
+}
